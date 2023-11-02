@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+	<title>Register</title>
+	<style>
+		html {
+			height: 100%;
+		}
+
+		body {
+			height: 100%;
+			background-color: #fcfcfc;
+		}
+
+		img {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			width: 20%;
+		}
+
+		#foo {
+			text-align: center;
+			margin-top: 1%;
+		}
+	</style>
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="#">Movie Mania</a>
+			<ul class=" navbar-nav nav justify-content-end">
+				<li class="nav-item">
+					<a class="nav-link " href="index.html">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="movies.html">Movies</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link active" href="Register.html">SignUp</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<br>
+	<div class="container">
+		<img src="Logo.png" alt="">
+		<div class="container-sm border w-50 p-3">
+			<ul class="nav nav-pills nav-justified mb-3">
+				<a class="nav-link" href="#">Login</a>
+				<a class="nav-link active" href="#">Register</a>
+			</ul>
+			<form id="registration" action="register" method="post">
+				<div class="row">
+					<div class="col-md-6 mb-4">
+						<div class="form-outline">
+							<!-- <label>First Name</label> -->
+							<input class="form-control" type="text" placeholder="First Name" name="first" id="first"
+								required>
+						</div>
+					</div>
+					<div class="col-md-6 mb-4">
+						<div class="form-outline">
+							<!-- <label>Last Name</label> -->
+							<input class="form-control" type="text" placeholder="Last Name" name="last" id="last"
+								required>
+						</div>
+					</div>
+				</div>
+				<br>
+				<div class="form-group">
+					<!-- <label>Email</label> -->
+					<input class="form-control" type="email" name="email" placeholder="Email Address"
+						pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" id="email" required>
+				</div>
+				<br>
+				<div class="form-group">
+					<!-- <label>Password</label> -->
+					<input class="form-control" type="password" name="password" placeholder="Password"
+						pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" id="pswd1" required>
+				</div>
+				<br>
+				<div class="form-group">
+					<!-- <label>Confirm Password</label> -->
+					<input class="form-control" type="password" name="conpassword" placeholder="Confirm Password"
+						pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" id="pswd2" required>
+				</div>
+				<br>
+				<div class="form-group">
+					<!-- <label>Mobile No.</label> <br> -->
+					<input class="form-control" type="tel" name="mob" pattern="+91[7-9]{1}[0-9]{9}" value="+91"
+						placeholder="Mobile No." id="mobi" required>
+				</div>
+				<br>
+				<div class="form-check d-flex justify-content mb-4">
+					<input class="form-check-input me-2" type="checkbox" required>
+					<label class="form-check-label" for="registerCheck">
+						I Agree to the terms and conditions
+					</label>
+				</div>
+
+				<input type="submit" class="btn btn-primary btn-block" value="Register">
+				<button class="btn btn-success btn-block" type="reset">Reset</button>
+				<br>
+			</form>
+		</div>
+	</div>
+<br>
+<br>
+<br>
+
+	<footer>
+		<p id="foo">
+			Copyright &copy; All rights reserved | This Registration page is made by Yash M M
+		</p>
+	</footer>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
